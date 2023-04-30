@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+
+  --mainColor: #c95e00;
+  --black: #070404;
+  --ash: #8d8d8d;
+  --darkAsh: #5e5e5e;
+  --black: #070404;
+  --navigationTextColor: #5e5e5e;
+  --buttonColor: #d92128;
+  --formTitlesColor: #d92128;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
