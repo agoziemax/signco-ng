@@ -6,63 +6,40 @@ import Caro from '../assets/bg.JPG'
 
 
 function Carousel() {
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 2,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-};
 
   return (
     <div>
-      <h2>Responsive Carousel</h2>
-      <Slider {...settings}>
-        <div>
-          <img src={Caro} className='w-100 h-50' alt='Carousel Image' />
+      <div id='carouselExampleFade' className='carousel slide carousel-fade'>
+        <div className='carousel-inner'>
+          <div className='carousel-item active'>
+            <img src={Caro} className='d-block w-100' alt='...' />
+          </div>
+          <div className='carousel-item'>
+            <img src='...' className='d-block w-100' alt='...' />
+          </div>
+          <div className='carousel-item'>
+            <img src='...' className='d-block w-100' alt='...' />
+          </div>
         </div>
-        <div>
-          <img src='https://via.placeholder.com/600x500' alt='Carousel Image' />
-        </div>
-        <div>
-          <img src='https://via.placeholder.com/600x400' alt='Carousel Image' />
-        </div>
-        <div>
-          <img src='https://via.placeholder.com/600x400' alt='Carousel Image' />
-        </div>
-        <div>
-          <img src='https://via.placeholder.com/600x400' alt='Carousel Image' />
-        </div>
-        <div>
-          <img src='https://via.placeholder.com/600x400' alt='Carousel Image' />
-        </div>
-      </Slider>
+        <button
+          className='carousel-control-prev'
+          type='button'
+          data-bs-target='#carouselExampleFade'
+          data-bs-slide='prev'
+        >
+          <span className='carousel-control-prev-icon' aria-hidden='true' />
+          <span className='visually-hidden'>Previous</span>
+        </button>
+        <button
+          className='carousel-control-next'
+          type='button'
+          data-bs-target='#carouselExampleFade'
+          data-bs-slide='next'
+        >
+          <span className='carousel-control-next-icon' aria-hidden='true' />
+          <span className='visually-hidden'>Next</span>
+        </button>
+      </div>
     </div>
   );
 }
