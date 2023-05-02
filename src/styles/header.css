@@ -16,11 +16,7 @@
 }
 
 .wrapper{
-  /* background-image: linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px),
-                    repeating-linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.05) 1px, transparent 1px, transparent 10px);
-  height: 120px;
-  width: 100%; */
+  
 position: relative;
 
 

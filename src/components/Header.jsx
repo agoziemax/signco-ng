@@ -44,7 +44,7 @@ const [isOpen, setIsOpen] = useState(false);
             Logo
           </a> */}
           <button
-            className='navbar-toggler'
+            className='navbar-toggler '
             type='button'
             data-bs-toggle='collapse'
             data-bs-target='#navbarNav'
@@ -53,7 +53,7 @@ const [isOpen, setIsOpen] = useState(false);
             aria-label='Toggle navigation'
             onClick={toggleNavbar}
           >
-            <span className='navbar-toggler-icon'></span>
+            <span className='navbar-toggler-icon text-white'></span>
           </button>
           <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`}>
             <ul className='navbar-nav mx-auto'>
@@ -61,7 +61,7 @@ const [isOpen, setIsOpen] = useState(false);
                 <a className='nav-link'>Home</a>
               </li>
               <li className='nav-item me-5' onClick={() => navigate('/About')}>
-                <a className='nav-link' >About</a>
+                <a className='nav-link'>About</a>
               </li>
               <li className='nav-item me-5'>
                 <a className='nav-link'>Services</a>
