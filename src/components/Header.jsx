@@ -16,7 +16,7 @@ const [isOpen, setIsOpen] = useState(false);
     <div>
       <nav className='navbar navbar-expand-lg main-nav pe-5'>
         <div className='container-fluid ps-lg-5 ms-lg-5 '>
-          <a className='navbar-brand d-flex flex-wrap' href='#'>
+          <a className='navbar-brand d-flex flex-wrap'>
             <div className='pe-3'>
               <TelephoneFill color='#fb7116' /> <span>0703-598-787</span>
             </div>
@@ -61,7 +61,7 @@ const [isOpen, setIsOpen] = useState(false);
                 <a className='nav-link'>Home</a>
               </li>
               <li className='nav-item me-5' onClick={() => navigate('/About')}>
-                <a className='nav-link'>About</a>
+                <a className='nav-link'>About us</a>
               </li>
               <li className='nav-item me-5'>
                 <a className='nav-link'>Services</a>
@@ -72,7 +72,7 @@ const [isOpen, setIsOpen] = useState(false);
                 </a>
               </li>
               <li className='nav-item me-5'>
-                <a className='nav-link' href='#'>
+                <a className='nav-link'>
                   <Link to='/Contact' style={{ textDecoration: 'none', color: 'white' }}>
                     Contact
                   </Link>
