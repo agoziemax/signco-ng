@@ -10,10 +10,10 @@ function Home() {
       <div className='container-fluid'>
       <div className="row">
         <div className="col-md offset-1">
-          <h3>MAKE YOUR FIRST IMPRESSION EXCEPTIONAL.</h3>
+          <h3>MAKE YOUR FIRST IMPRESSION</h3>
         </div>
         <div className="col-md">
-          <div className='btn bg-danger'>Get quote</div>
+
         </div>
       </div>
       </div>
