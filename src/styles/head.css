@@ -1,0 +1,41 @@
+/* Header.css */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333333;
+  color: aliceblue;
+  flex-wrap: wrap;
+}
+
+.signCo-logo {
+  position: relative;
+  padding-bottom: 20px;
+  height: 4rem;
+}
+
+.animated-text {
+  display: flex;
+}
+
+.animated-text-item {
+  margin-right: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  /* animation: fade-in-out 3s infinite; */
+   font-size: 1.5rem;
+}
+
+.animated-text-item.active {
+  opacity: 1;
+}
+
+@keyframes fade-in-out {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
