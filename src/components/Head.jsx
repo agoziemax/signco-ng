@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import signCo from '../assets/sigco-removebg.png';
+import signCo from '../assets/signco_new.png';
 import '../styles/head.css';
 
 const Header = () => {
@@ -17,9 +17,13 @@ const Header = () => {
   }, [texts.length]);
 
   return (
-    <header className='header'>
-      <div className='logo'>
-        <img src={signCo} alt='logo' className='signCo-logo img-fluid' />
+    <nav className='header'>
+      <div className='logo d-flex'>
+        <div className='orange'></div>
+        <div className=''>
+          <img src={signCo} alt='logo' className='signCo-logo ' /> <br />
+          <small className='mt-n5'>LED SIGNS | DISPLAYS</small>
+        </div>
       </div>
       <div className='animated-text'>
         {texts.map((text, index) => (
@@ -28,7 +32,7 @@ const Header = () => {
           </span>
         ))}
       </div>
-    </header>
+    </nav>
   );
 };
 

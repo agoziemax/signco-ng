@@ -10,32 +10,65 @@
 }
 
 .signCo-logo {
-  position: relative;
-  padding-bottom: 20px;
-  height: 4rem;
+  padding-top: 10px;
+  margin-bottom: -9px;
+  height: auto;
+  width: 150px;
+  padding-left: 10px;
+
+}
+
+.logo small{
+  font-size: 0.67rem;
+  padding-left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .logo small{
+    font-size: 1rem; /* Adjust the font size for small screens */
+  }
+}
+
+.orange{
+  width: 20px;
+  background-color: var(--mainColor);
+  z-index: 100;
 }
 
 .animated-text {
   display: flex;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .animated-text-item {
-  margin-right: 10px;
+  padding-right: 20px;
+   display: inline-block;
   opacity: 0;
   transition: opacity 0.5s;
   /* animation: fade-in-out 3s infinite; */
    font-size: 1.5rem;
+   animation: slideLeft 10s linear infinite;
 }
 
 .animated-text-item.active {
   opacity: 1;
 }
 
-@keyframes fade-in-out {
+/* @keyframes fade-in-out {
   0%, 100% {
     opacity: 0;
   }
   50% {
     opacity: 1;
+  }
+} */
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
