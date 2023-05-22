@@ -12,7 +12,7 @@ const NavigationBar = () => {
             Home
           </Nav.Link>
           <Nav.Link href='#'>Link</Nav.Link>
-          <Nav.Link disabled>Disabled</Nav.Link>
+          <Nav.Link disabled>Disable</Nav.Link>
         </Nav>
         <Form className='d-flex' role='search'>
           <FormControl type='search' placeholder='Search' aria-label='Search' className='me-2' />
