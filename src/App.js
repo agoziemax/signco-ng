@@ -6,15 +6,12 @@ import 'boxicons/css/boxicons.min.css';
 import Head from './components/Head';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import NavigationBar from './components/Navigation';
 
 function App() {
   return (
     <div className='App'>
       {/* <Header /> */}
       <Head/>
-      <NavigationBar/>
-
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='/About' element={<About />} />

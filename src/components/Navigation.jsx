@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 
 const NavigationBar = () => {
   return (
@@ -12,14 +12,9 @@ const NavigationBar = () => {
             Home
           </Nav.Link>
           <Nav.Link href='#'>Link</Nav.Link>
-          <Nav.Link disabled>Disable</Nav.Link>
+          <Nav.Link disabled>Disabled</Nav.Link>
         </Nav>
-        <Form className='d-flex' role='search'>
-          <FormControl type='search' placeholder='Search' aria-label='Search' className='me-2' />
-          <Button variant='outline-success' type='submit'>
-            Search
-          </Button>
-        </Form>
+        <div className='sliding-text-container'>{/* Sliding text animation */}</div>
       </Navbar.Collapse>
     </Navbar>
   );
