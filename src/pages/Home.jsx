@@ -10,7 +10,7 @@ function Home() {
       <div className='container-fluid'>
       <div className="row">
         <div className="col-md offset-1">
-          <h3>MAKE YOUR FIRST IMPRESSION</h3>
+          <h3>MAKE YOUR FIRST IMPRESSION whenit s</h3>
         </div>
         <div className="col-md">
 

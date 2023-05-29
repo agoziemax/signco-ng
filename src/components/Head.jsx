@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import signCo from '../assets/signco_new.png';
 import '../styles/head.css';
+import { NavLink } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
-const Header = () => {
 
+const Header = () => {
   const texts = ['Indoor', 'Bold', 'Creative', 'Bright'];
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -30,33 +31,32 @@ const Header = () => {
         <Navbar.Toggle aria-controls='navbarTogglerDemo01' />
         <Navbar.Collapse id='navbarTogglerDemo01'>
           <div className='animated-text'>
-        {texts.map((text, index) => (
-          <span key={index} className={`animated-text-item ${index === activeIndex ? 'active' : ''}`}>
-            {text}
-          </span>
-        ))}
-      </div>
-          <Nav className='me-auto mb-2 mb-lg-0 '>
-            <Nav.Link href='#' active className='text-white'>
+            {texts.map((text, index) => (
+              <span key={index} className={`animated-text-item ${index === activeIndex ? 'active' : ''}`}>
+                {text}
+              </span>
+            ))}
+          </div>
+          <Nav className='me-auto mb-2 mb-lg-0 gap-3 pe-4'>
+            <NavLink to='/' activeClassName='act' className='text-white text-decoration-none pt-2'>
               Home
-            </Nav.Link>
-            <Nav.Link href='#' active className='text-white'>
-              Link
-            </Nav.Link>
-            <Nav.Link active className='text-white'>
-              Disabled
-            </Nav.Link>
+            </NavLink>
+            <NavLink to='/About' className='text-white text-white text-decoration-none pt-2'>
+              About Us
+            </NavLink>
+            <NavLink to='Services' className='text-white text-white text-decoration-none pt-2'>
+              Services
+            </NavLink>
+            <NavLink to='Portfolio' className='text-white text-white text-decoration-none pt-2'>
+              Portfolio
+            </NavLink>
+            <NavLink to='/Contact' className='text-white text-white text-decoration-none pt-2'>
+              Contact Us
+            </NavLink>
           </Nav>
           <div className='sliding-text-container'>{/* Sliding text animation */}</div>
         </Navbar.Collapse>
       </Navbar>
-      {/* <div className='animated-text'>
-        {texts.map((text, index) => (
-          <span key={index} className={`animated-text-item ${index === activeIndex ? 'active' : ''}`}>
-            {text}
-          </span>
-        ))}
-      </div> */}
     </nav>
   );
 };

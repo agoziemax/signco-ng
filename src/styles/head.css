@@ -35,6 +35,9 @@
   z-index: 100;
 }
 
+.active{
+  background: var(--mainColor);
+}
 .animated-text {
    border: solid 1px red;
   display: flex;
