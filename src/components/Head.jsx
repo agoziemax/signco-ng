@@ -38,7 +38,7 @@ const Header = () => {
             ))}
           </div>
           <Nav className='me-auto mb-2 mb-lg-0 gap-3 pe-4'>
-            <NavLink to='/' activeClassName='act' className='text-white text-decoration-none pt-2'>
+            <NavLink to='/' activeclassname='active' className='text-white text-decoration-none pt-2'>
               Home
             </NavLink>
             <NavLink to='/About' className='text-white text-white text-decoration-none pt-2'>
@@ -47,7 +47,7 @@ const Header = () => {
             <NavLink to='/Services' className='text-white text-white text-decoration-none pt-2'>
               Services
             </NavLink>
-            <NavLink to='Portfolio' className='text-white text-white text-decoration-none pt-2'>
+            <NavLink to='/Portfolio' className='text-white text-white text-decoration-none pt-2'>
               Portfolio
             </NavLink>
             <NavLink to='/Contact' className='text-white text-white text-decoration-none pt-2'>

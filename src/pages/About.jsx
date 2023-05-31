@@ -5,7 +5,7 @@ import React from 'react';
 function About() {
 
   return <div className=''>
-   <p>This is about us page</p>
+   <h1 className='mt-5'>The about us page is still under development.</h1>
   </div>;
 }
 

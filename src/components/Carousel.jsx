@@ -11,16 +11,16 @@ function CarouselFade() {
   return (
     <div>
       <Carousel fade className='my-carousel'>
-        <Carousel.Item>
-          <img className='d-block w-100' src={Bg2} alt='First slide' />
-        </Carousel.Item>
         {/* <Carousel.Item>
+          <img className='d-block w-100' src={Bg2} alt='First slide' />
+        </Carousel.Item> */}
+        <Carousel.Item>
           <div className='overlay'>
             <h1 className='headline'>Discover SignCo</h1>
             <p className='description'>Your trusted partner for stunning signs and exceptional branding solutions.</p>
           </div>
           <img className='d-block w-100' src={Bg2} alt='First slide' />
-        </Carousel.Item> */}
+        </Carousel.Item>
         <Carousel.Item>
           <img className='d-block w-100' src={Bg} alt='Second slide' />
         </Carousel.Item>

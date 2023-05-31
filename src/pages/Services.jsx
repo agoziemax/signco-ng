@@ -10,17 +10,24 @@ function Services() {
         <div className='row'>
           <div className='col-lg-3 col-md-6'>
             <div className='service  animated fadeIn'>
-              <img src={serviceImage1} alt='Signage Design' className='glow-on-hover' />
-              <h3>Signage Design</h3>
-              <p>
-                We offer professional signage design services tailored to your branding needs. Our team of experts will
-                create eye-catching and impactful designs that effectively convey your message.
-              </p>
+              <div className='card'>
+                <img src={serviceImage1} alt='Signage Design' className='glow-on-hover' />
+
+                <div className='card-boder'>
+                  <div className='card-content'>
+                    <h3>Signage Design</h3>
+                    <p>
+                      We offer professional signage design services tailored to your branding needs. Our team of experts
+                      will create eye-catching and impactful designs that effectively convey your message.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className='col-lg-3 col-md-6'>
             <div className='service'>
-              <img src={serviceImage1} alt='Signage Fabrication' />
+              <img src={serviceImage1} alt='Signage Fabrication' className='glow-on-hover' />
               <h3>Signage Fabrication</h3>
               <p>
                 With state-of-the-art facilities and skilled craftsmen, we provide top-quality signage fabrication
@@ -30,7 +37,7 @@ function Services() {
           </div>
           <div className='col-lg-3 col-md-6'>
             <div className='service'>
-              <img src={serviceImage1} alt='Signage Installation' />
+              <img src={serviceImage1} alt='Signage Installation' className='glow-on-hover' />
               <h3>Signage Installation</h3>
               <p>
                 Our experienced team handles the professional installation of signs, ensuring precise placement and
@@ -41,7 +48,7 @@ function Services() {
           </div>
           <div className='col-lg-3 col-md-6'>
             <div className='service'>
-              <img src={serviceImage1} alt='Signage Maintenance' />
+              <img src={serviceImage1} alt='Signage Maintenance' className='glow-on-hover' />
               <h3>Signage Maintenance</h3>
               <p>
                 To keep your signs in excellent condition, we offer comprehensive signage maintenance services. Our team
