@@ -36,8 +36,10 @@
 }
 
 .active{
-  background: var(--mainColor);
+  color: var(--mainColor) !important;
 }
+
+
 .animated-text {
    border: solid 1px red;
   display: flex;
@@ -55,13 +57,12 @@
 
 .animated-text-item {
 
-  padding-right: 20px;
+  /* padding-right: 20px; */
    display: inline-block;
   opacity: 0;
   transition: opacity 0.5s;
   /* animation: fade-in-out 3s infinite; */
    font-size: 1.5rem;
-   animation: slideLeft 5s linear infinite;
 
 }
 
@@ -72,9 +73,14 @@
 
 @keyframes slideLeft {
   0% {
-    transform: translateX(0%);
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(-100%);
   }
+}
+
+.animated-text .animated-text-item {
+  animation: slideLeft 5s linear infinite;
+   animation-delay: calc(0.5s * var(--index));
 }

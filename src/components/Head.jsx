@@ -11,7 +11,7 @@ const Header = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 9000);
+    }, 5000);
 
     return () => {
       clearInterval(interval);
@@ -44,7 +44,7 @@ const Header = () => {
             <NavLink to='/About' className='text-white text-white text-decoration-none pt-2'>
               About Us
             </NavLink>
-            <NavLink to='Services' className='text-white text-white text-decoration-none pt-2'>
+            <NavLink to='/Services' className='text-white text-white text-decoration-none pt-2'>
               Services
             </NavLink>
             <NavLink to='Portfolio' className='text-white text-white text-decoration-none pt-2'>

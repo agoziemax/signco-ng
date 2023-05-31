@@ -87,3 +87,12 @@
 // }
 
 // export default Header
+
+// @keyframes slideLeft {
+//   from {
+//     right: 200%;
+//   }
+//   to {
+//     right: 100px;
+//   }
+// }

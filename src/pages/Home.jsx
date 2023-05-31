@@ -1,21 +1,19 @@
 import React from 'react'
 import Carousel from '../components/Carousel';
+import Services from './Services';
 
 
 
 function Home() {
   return (
     <div>
-      <Carousel/>
+      <Carousel />
       <div className='container-fluid'>
-      <div className="row">
-        <div className="col-md offset-1">
-          <h3>MAKE YOUR FIRST IMPRESSION whenit s</h3>
+        <div className='row'>
+          <div className='col-md'>
+            <Services />
+          </div>
         </div>
-        <div className="col-md">
-
-        </div>
-      </div>
       </div>
     </div>
   );
