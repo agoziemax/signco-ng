@@ -10,8 +10,8 @@ function Home() {
       <Carousel />
       <div className='container-fluid'>
         <div className='row'>
-          <div className='col-md'>
-            <Services />
+          <div className='col-md p-0'>
+            <Services/>
           </div>
         </div>
       </div>

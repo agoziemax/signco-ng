@@ -1,6 +1,8 @@
 
 .services {
   padding: 50px 0;
+  background-color: #333333;
+  border-top: solid 1px white;
 }
 
 .service {
@@ -16,7 +18,7 @@
 }
 
 .service img.glow-on-hover:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Apply box shadow on hover */
+  box-shadow: 0 0 20px var(--mainColor); /* Apply box shadow on hover */
 }
 
 .service h3 {
@@ -48,11 +50,10 @@
 }
 
 .card {
-  position: relative;
+
   display: inline-block;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 2px 6px var(--mainColor); */
   transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -62,7 +63,7 @@
 }
 
 .card-border {
-  position: absolute;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -77,9 +78,9 @@
 }
 
 .service:hover .card-border {
-  border-color: #007bff; /* Change the border color to your desired color */
+  box-shadow: var(--mainColor); /* Change the border color to your desired color */
 }
 
 .service:hover .card {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Apply a different shadow effect on hover */
+  box-shadow: 0 4px 20px var(--mainColor); /* Apply a different shadow effect on hover */
 }

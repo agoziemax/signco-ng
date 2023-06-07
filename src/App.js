@@ -8,6 +8,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/Services' element={<Services />} />
         <Route path='/Portfolio' element={<Portfolio />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
