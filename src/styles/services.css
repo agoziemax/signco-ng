@@ -1,8 +1,14 @@
-
 .services {
   padding: 50px 0;
-  background-color: #333333;
-  border-top: solid 1px white;
+  background: linear-gradient(to bottom, #333333, #3f1c04);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.services .col-lg-3:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .service {
@@ -14,7 +20,7 @@
   max-width: 100%;
   height: auto;
   margin-bottom: 15px;
-   transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .service img.glow-on-hover:hover {
@@ -50,7 +56,6 @@
 }
 
 .card {
-
   display: inline-block;
   overflow: hidden;
   /* box-shadow: 0 2px 6px var(--mainColor); */
@@ -63,7 +68,6 @@
 }
 
 .card-border {
-
   top: 0;
   left: 0;
   width: 100%;
