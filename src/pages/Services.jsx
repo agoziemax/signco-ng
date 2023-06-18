@@ -35,7 +35,7 @@ function Services() {
   return (
     <section className='services'>
       <div className='container'>
-        <h2 className='text-center mb-5 text-white'>Our Services</h2>
+        <h2 className='text-center mb-5'>Our Services</h2>
         <div className='row'>
           {servicesData.map((service, index) => (
             <div className='col-lg-3 col-md-6' key={index}>

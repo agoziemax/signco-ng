@@ -1,0 +1,32 @@
+
+footer{
+  background-color: #333333;
+  /* height: 197px; */
+  color: white;
+}
+.signCo-logo {
+  padding-top: 10px;
+  margin-bottom: -9px;
+  height: auto;
+  width: 150px;
+  padding-left: 10px;
+
+}
+
+footer small{
+  font-size: 0.67rem;
+  padding-left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .logo small{
+    font-size: 1rem; /* Adjust the font size for small screens */
+  }
+}
+
+footer .Links{
+color : white !important;
+}
+footer > .footer-links{
+ color : white !important;
+}
