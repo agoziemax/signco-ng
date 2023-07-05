@@ -30,3 +30,8 @@ color : white !important;
 footer > .footer-links{
  color : white !important;
 }
+
+.col-border{
+  border-left: #6b6666 solid 2px ;
+  box-shadow: #333333;
+}
