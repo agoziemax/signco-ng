@@ -1,27 +1,25 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
 import signCo from '../assets/signco_new.png';
 import '../styles/footer.css';
 import { FaHome, FaFacebook, FaTwitter } from 'react-icons/fa';
 import { EnvelopeFill, Instagram, TelephoneFill } from 'react-bootstrap-icons';
 
-
 function Footer() {
-
   const currentYear = new Date().getFullYear();
- const footerLinks = [
-   { label: 'Home', url: '/' },
-   { label: 'Services', url: '/services' },
-   { label: 'Portfolio', url: '/portfolio' },
-   { label: 'About Us', url: '/about' },
-   { label: 'Contact', url: '/contact' },
- ];
+  const footerLinks = [
+    { label: 'Home', url: '/' },
+    { label: 'Services', url: '/services' },
+    { label: 'Portfolio', url: '/portfolio' },
+    { label: 'About Us', url: '/about' },
+    { label: 'Contact', url: '/contact' },
+  ];
 
- const socialMediaLinks = [
-   { label: <FaFacebook className='m-3' style={{ fontSize: '1.5rem' }} />, url: 'https://www.facebook.com/signco' },
-   { label: <FaTwitter className='m-3' style={{ fontSize: '1.5rem' }} />, url: 'https://www.twitter.com/signco' },
-   { label: <Instagram className='m-3' style={{ fontSize: '1.5rem' }} />, url: 'https://www.instagram.com/signco' },
- ];
+  const socialMediaLinks = [
+    { label: <FaFacebook className='m-3' style={{ fontSize: '1.5rem' }} />, url: 'https://www.facebook.com/signco' },
+    { label: <FaTwitter className='m-3' style={{ fontSize: '1.5rem' }} />, url: 'https://www.twitter.com/signco' },
+    { label: <Instagram className='m-3' style={{ fontSize: '1.5rem' }} />, url: 'https://www.instagram.com/signco' },
+  ];
 
   return (
     <footer className='footer pt-5 pb-5 h-100'>
@@ -45,7 +43,6 @@ function Footer() {
               </div>
             </div>
             <div className='mb-4'>
-
               <TelephoneFill color='#fb7116' className='' /> <span>0703-598-787</span>
             </div>
             <div>
@@ -66,7 +63,7 @@ function Footer() {
           </div>
           <div className='col-md col-border'>
             <h3>Follow us</h3>
-            <div className='social-media-links d-flex flex-lg-column text-white '>
+            <div className='social-media-links d-flex text-white mt-4 '>
               {socialMediaLinks.map((link, index) => (
                 <a key={index} href={link.url} style={{ color: '#fb7116' }}>
                   {link.label}
@@ -80,4 +77,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;
