@@ -26,7 +26,7 @@ function Services() {
     {
       title: 'Signage Maintenance',
       description:
-        'To keep your signs in excellent condition, we offer comprehensive signage maintenance services. Our team conducts regular inspections, cleaning, and repairs to prolong the lifespan of your signage.',
+        'To keep your signs in excellent condition, we offer comprehensive signage maintenance services. Our team conducts regular inspections, cleaning, and repairs to prolong the lifespan of your signages.',
       image: serviceImage1,
     }
   ];
