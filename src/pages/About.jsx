@@ -1,6 +1,5 @@
 import React from 'react';
-import capture from '../assets/bg.JPG';
-
+import capture from '../assets/bg.JPG'; // Update with actual image path
 
 function About() {
   const accomplishments = [
@@ -16,41 +15,19 @@ function About() {
       <div className='container'>
         <div className='row'>
           <div className='col-lg-12'>
-            <img
-              src={capture} // Replace with the URL of your about image
-              alt='About Us'
-              className='about-image'
-            />
-          </div>
-          <div className='col-lg-12'>
-            <h2>About Us</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit felis odio, at sagittis eros
-              scelerisque nec. Suspendisse potenti. Maecenas vitae nunc quis mi volutpat convallis vel non lacus.
-            </p>
-            <p>
-              Vestibulum venenatis mauris sed magna aliquet, in tincidunt erat euismod. Nulla sit amet fermentum justo,
-              eget venenatis dolor. Nam sit amet arcu eu mi malesuada volutpat vel vel purus.
-            </p>
-            <p>
-              Duis at orci in tellus fermentum ultrices. Suspendisse tempus felis vel elit posuere, eget aliquam quam
-              ullamcorper. Nulla eu lectus at metus tincidunt tincidunt.
-            </p>
-          </div>
-          <div className='col-lg-12'>
-            <h3>Our Accomplishments</h3>
+            <h2>Welcome to Signco - Your Partner in Signage Excellence</h2>
+            <img src={capture} alt='About Us' className='about-image' />
+            <p>At Signco, we specialize in crafting premium-quality signage and branding solutions...</p>
+            <h3>Our Journey</h3>
+            <p>Founded with a vision to transform the signage landscape, Signco has grown into a trusted name...</p>
+            <h3>What Sets Us Apart</h3>
             <ul>
               {accomplishments.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
-          </div>
-          <div className='col-lg-12'>
-            <img
-              src='https://example.com/about-image.jpg' // Replace with the URL of your about image
-              alt='About Us'
-              className='about-image'
-            />
+            <h3>Join Us in Crafting Your Brand's Future</h3>
+            <p>Let Signco be your guide in the world of professional signage and branding...</p>
           </div>
         </div>
       </div>
